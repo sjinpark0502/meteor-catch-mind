@@ -1,0 +1,80 @@
+h1 {
+  text-align: center;
+}
+.app {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 750px;
+  height: 750px;
+}
+
+.dot {
+  outline: solid 1px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 750px;
+  margin-left: 20px;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message-own {
+  background-color: rgba(100, 170, 0, .1);
+}
+
+.message-other {
+  background-color: rgba(0, 114, 135, .1);
+}
+
+.input-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-top: 0.1rem solid #ccc;
+}
+
+.name-input {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.message-input {
+  width: 200px;
+}
+
+.input {
+  padding: 5px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

@@ -1,0 +1,24 @@
+<body>
+  {{> mainContainer}}
+</body>
+<template name="mainContainer">
+  <h1>Meteor Catch Mind</h1>
+  <div class="app">
+    <div class="container">
+      {{#each dots}}
+        {{> dot}}
+      {{/each}}
+    </div>
+    <div class="chat">
+      <div class="messages">
+        {{#each messages}}
+          <div class="message {{isOwnMessage}}">{{name}} : {{ message }}</div>
+        {{/each}}
+      </div>
+      <div class="input-wrap">
+        <input class="input name-input" type="text" placeholder="Name">
+        <input class="input message-input" type="text" placeholder="Message" maxlength="20">
+      </div>
+    </div>
+  </div>
+</template>
