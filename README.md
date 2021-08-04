@@ -2,6 +2,7 @@
 
 ## Install Meteor
 
+window: `npm install -g meteor`
 linux: `curl https://install.meteor.com/ | sh`
 
 ## Setup
